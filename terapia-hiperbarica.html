@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terapia Hiperbárica | Dr. Tiago Amoedo</title>
 
-    <!-- Meta Tags para SEO e Compartilhamento (WhatsApp/Redes Sociais) -->
+    <!-- Meta Tags para SEO e Compartilhamento -->
     <meta
       name="description"
       content="Acelere sua recuperação com a Terapia Hiperbárica. Tecnologia de ponta em oxigenoterapia no pós-operatório com Dr. Tiago Amoedo em Salvador, Bahia."
@@ -27,7 +27,7 @@
       content="https://images.unsplash.com/photo-1583912268102-140fa415392d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     />
 
-    <!-- Google Tag Manager (Espaço para o código de Tráfego Pago) -->
+    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -62,6 +62,7 @@
         font-family: "Montserrat", sans-serif;
         background-color: var(--brand-light);
         color: var(--brand-dark);
+        overflow-x: hidden;
       }
       h1,
       h2,
@@ -95,9 +96,20 @@
       .wpp-btn {
         animation: pulse-wpp 2s infinite;
       }
+
+      /* Classes de Animação de Entrada (Scroll) */
+      .reveal {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
 
-    <!-- Script de Rastreamento Específico do WhatsApp -->
+    <!-- Script de Rastreamento -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function rastrearWhatsApp() {
@@ -105,9 +117,6 @@
           event: "clique_whatsapp",
           origem: "botao_flutuante_hiperbarica",
         });
-        console.log(
-          "Clique no WhatsApp rastreado com sucesso pelo dataLayer (Página Hiperbárica)!",
-        );
       }
     </script>
   </head>
@@ -147,7 +156,9 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero-hiperbarica py-32 px-6 text-center text-white">
+    <section
+      class="hero-hiperbarica py-32 px-6 text-center text-white reveal active"
+    >
       <p
         class="text-primary tracking-widest uppercase text-xs font-semibold mb-4"
       >
@@ -167,12 +178,12 @@
 
     <!-- Conteúdo -->
     <section class="py-24 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl mb-8">
+      <h2 class="text-3xl mb-8 reveal">
         O padrão ouro em <span class="italic text-primary">Pós-operatório</span>
       </h2>
 
       <div
-        class="space-y-6 text-gray-600 font-light leading-relaxed text-sm md:text-base mb-16"
+        class="space-y-6 text-gray-600 font-light leading-relaxed text-sm md:text-base mb-16 reveal"
       >
         <p>
           Na busca pela excelência contínua, o protocolo de recuperação do Dr.
@@ -189,7 +200,7 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <div class="border-l-2 border-primary pl-6">
+        <div class="border-l-2 border-primary pl-6 reveal">
           <h3 class="font-serif text-xl text-black mb-3">
             Cicatrização Acelerada
           </h3>
@@ -199,14 +210,14 @@
             imperceptível e saudável.
           </p>
         </div>
-        <div class="border-l-2 border-primary pl-6">
+        <div class="border-l-2 border-primary pl-6 reveal">
           <h3 class="font-serif text-xl text-black mb-3">Redução do Inchaço</h3>
           <p class="text-gray-500 text-sm font-light">
             Promove uma vasoconstrição potente que diminui drasticamente o edema
             (inchaço) e as equimoses (manchas roxas) nos primeiros dias.
           </p>
         </div>
-        <div class="border-l-2 border-primary pl-6">
+        <div class="border-l-2 border-primary pl-6 reveal">
           <h3 class="font-serif text-xl text-black mb-3">
             Prevenção de Complicações
           </h3>
@@ -216,7 +227,7 @@
             operados.
           </p>
         </div>
-        <div class="border-l-2 border-primary pl-6">
+        <div class="border-l-2 border-primary pl-6 reveal">
           <h3 class="font-serif text-xl text-black mb-3">Retorno à Rotina</h3>
           <p class="text-gray-500 text-sm font-light">
             Com um pós-operatório mais confortável e menos doloroso, o tempo
@@ -227,7 +238,7 @@
       </div>
 
       <div
-        class="text-center mt-16 p-8 md:p-10 bg-gray-50 border border-gray-100 shadow-sm"
+        class="text-center mt-16 p-8 md:p-10 bg-gray-50 border border-gray-100 shadow-sm reveal"
       >
         <h3 class="text-2xl mb-4">Pronta para a sua transformação?</h3>
         <p class="text-gray-500 font-light text-sm mb-8">
@@ -246,7 +257,7 @@
     <!-- Footer Importado para Consistência e SEO Local -->
     <footer
       id="contato"
-      class="bg-brand-dark text-white"
+      class="bg-brand-dark text-white reveal"
       style="background-color: var(--brand-dark)"
     >
       <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -311,5 +322,26 @@
     >
       <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <!-- Script de Animação de Entrada -->
+    <script>
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.15,
+        },
+      );
+
+      revealElements.forEach((el) => revealObserver.observe(el));
+    </script>
   </body>
 </html>
