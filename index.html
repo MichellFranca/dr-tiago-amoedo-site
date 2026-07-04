@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Tiago Amoedo | Cirurgia Plástica Premium em Salvador</title>
 
-    <!-- Meta Tags para SEO e Compartilhamento (WhatsApp/Redes Sociais) -->
+    <!-- Meta Tags para SEO e Compartilhamento -->
     <meta
       name="description"
       content="Especialista em contorno corporal, Lipo HD e tecnologias avançadas de retração de pele em Salvador, Bahia. Agende sua avaliação VIP com o Dr. Tiago Amoedo."
@@ -27,7 +27,7 @@
       content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     />
 
-    <!-- Google Tag Manager (Espaço para o código de Tráfego Pago) -->
+    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -104,7 +104,6 @@
       }
     </style>
 
-    <!-- Script de Rastreamento Específico do WhatsApp -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function rastrearWhatsApp() {
@@ -128,7 +127,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Topbar (Contatos Rápidos e Redes Sociais) -->
+    <!-- Topbar -->
     <div
       class="bg-brand-dark text-white text-xs py-2 px-6 hidden md:flex justify-between items-center"
       style="background-color: var(--brand-dark)"
@@ -154,33 +153,8 @@
 
     <!-- Navegação Principal -->
     <header
-      class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 shadow-sm"
+      class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm relative"
     >
-      <!-- Menu Mobile Oculto -->
-      <div
-        id="mobile-menu"
-        class="fixed inset-0 bg-white z-40 hidden flex-col justify-center items-center space-y-8 text-xl font-serif"
-      >
-        <button id="close-menu" class="absolute top-8 right-8 text-3xl">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <a href="#" class="mobile-link text-primary hover:text-black">Início</a>
-        <a href="#sobre" class="mobile-link hover:text-primary">O Médico</a>
-        <a href="#procedimentos" class="mobile-link hover:text-primary"
-          >Procedimentos</a
-        >
-        <a
-          href="terapia-hiperbarica.html"
-          class="mobile-link hover:text-primary"
-          >Terapia Hiperbárica</a
-        >
-        <a
-          href="#contato"
-          class="mobile-link border border-primary px-8 py-3 text-primary uppercase text-sm tracking-widest mt-4"
-          >Agendar Avaliação</a
-        >
-      </div>
-
       <div
         class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center"
       >
@@ -188,7 +162,7 @@
           href="index.html"
           class="font-serif text-2xl tracking-widest font-semibold"
         >
-          TIAGO <span class="text-primary">AMOEDO</span>
+          Dr. TIAGO <span class="text-primary">AMOEDO</span>
         </a>
 
         <!-- Menu Desktop -->
@@ -216,7 +190,7 @@
           >
             Agendar Consulta
           </a>
-          <!-- Botão do Menu Mobile (Restaurado) -->
+          <!-- Botão do Menu Mobile -->
           <button
             id="btn-menu"
             class="lg:hidden text-2xl text-primary"
@@ -224,6 +198,46 @@
           >
             <i class="fa-solid fa-bars"></i>
           </button>
+        </div>
+      </div>
+
+      <!-- Novo Menu Mobile (Dropdown Clássico) -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex-col"
+      >
+        <a
+          href="index.html"
+          class="mobile-link block px-6 py-4 border-b border-gray-50 text-sm font-semibold tracking-wide uppercase text-gray-700 hover:text-primary"
+          >Início</a
+        >
+        <a
+          href="#sobre"
+          class="mobile-link block px-6 py-4 border-b border-gray-50 text-sm font-semibold tracking-wide uppercase text-gray-700 hover:text-primary"
+          >O Médico</a
+        >
+        <a
+          href="#procedimentos"
+          class="mobile-link block px-6 py-4 border-b border-gray-50 text-sm font-semibold tracking-wide uppercase text-gray-700 hover:text-primary"
+          >Procedimentos</a
+        >
+        <a
+          href="terapia-hiperbarica.html"
+          class="mobile-link block px-6 py-4 border-b border-gray-50 text-sm font-semibold tracking-wide uppercase text-primary"
+          >Terapia Hiperbárica</a
+        >
+        <a
+          href="#blog"
+          class="mobile-link block px-6 py-4 border-b border-gray-50 text-sm font-semibold tracking-wide uppercase text-gray-700 hover:text-primary"
+          >Blog</a
+        >
+        <div class="p-6 bg-gray-50">
+          <a
+            href="#contato"
+            class="mobile-link block text-center bg-brand-dark text-white hover:bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider transition duration-300"
+          >
+            Agendar Avaliação
+          </a>
         </div>
       </div>
     </header>
@@ -266,7 +280,7 @@
             <img
               src="dr-tiago.jpg"
               alt="Dr. Tiago Amoedo"
-              class="w-full h-[400px] md:h-[600px] object-cover shadow-xl grayscale hover:grayscale-0 transition duration-700"
+              class="w-full h-[400px] md:h-[700px] object-cover shadow-xl grayscale hover:grayscale-0 transition duration-700"
             />
           </div>
           <div>
@@ -518,7 +532,7 @@
       </section>
     </main>
 
-    <!-- Footer e Contato com Mapa -->
+    <!-- Footer -->
     <footer
       id="contato"
       class="bg-brand-dark text-white"
@@ -576,7 +590,7 @@
       </div>
     </footer>
 
-    <!-- Botão WhatsApp com Rastreamento -->
+    <!-- Botão WhatsApp -->
     <a
       href="#"
       onclick="rastrearWhatsApp()"
@@ -587,30 +601,36 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <!-- Script do Menu Mobile -->
     <script>
       const btnMenu = document.getElementById("btn-menu");
-      const btnClose = document.getElementById("close-menu");
       const mobileMenu = document.getElementById("mobile-menu");
       const mobileLinks = document.querySelectorAll(".mobile-link");
+      const iconMenu = btnMenu.querySelector("i");
 
       if (btnMenu) {
         btnMenu.addEventListener("click", () => {
-          mobileMenu.classList.remove("hidden");
-          mobileMenu.classList.add("flex");
+          mobileMenu.classList.toggle("hidden");
+          mobileMenu.classList.toggle("flex");
+
+          // Troca o ícone de hambúrguer para o X e vice-versa
+          if (mobileMenu.classList.contains("hidden")) {
+            iconMenu.classList.remove("fa-xmark");
+            iconMenu.classList.add("fa-bars");
+          } else {
+            iconMenu.classList.remove("fa-bars");
+            iconMenu.classList.add("fa-xmark");
+          }
         });
       }
 
-      if (btnClose) {
-        btnClose.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-          mobileMenu.classList.remove("flex");
-        });
-      }
-
+      // Fecha o menu automaticamente quando clica em um link
       mobileLinks.forEach((link) => {
         link.addEventListener("click", () => {
           mobileMenu.classList.add("hidden");
           mobileMenu.classList.remove("flex");
+          iconMenu.classList.remove("fa-xmark");
+          iconMenu.classList.add("fa-bars");
         });
       });
     </script>
