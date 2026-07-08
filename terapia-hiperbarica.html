@@ -464,8 +464,12 @@
       </div>
     </section>
 
-    <!-- Footer com Endereço Atualizado -->
-    <footer id="contato" class="bg-brand-dark text-white reveal">
+    <!-- Footer com Endereço Atualizado e Redes Sociais -->
+    <footer
+      id="contato"
+      class="bg-brand-dark text-white reveal"
+      style="background-color: var(--brand-dark)"
+    >
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="p-12 lg:p-24 flex flex-col justify-center">
           <h2 class="text-3xl mb-8">
@@ -477,23 +481,49 @@
           </p>
 
           <div class="space-y-6 text-sm">
+            <!-- Endereço -->
             <div class="flex items-start gap-4">
               <i class="fa-solid fa-location-dot text-primary text-xl mt-1"></i>
               <p class="text-gray-300 font-light leading-relaxed">
                 Av. Paulo VI, 389<br />Pituba, Salvador - BA<br />CEP: 41810-000
               </p>
             </div>
+
+            <!-- Telefone -->
             <div class="flex items-center gap-4">
               <i class="fa-solid fa-phone text-primary text-xl"></i>
               <p class="text-gray-300 font-light">(71) 98539-0567</p>
             </div>
+
+            <!-- E-mail -->
             <div class="flex items-center gap-4">
               <i class="fa-solid fa-envelope text-primary text-xl"></i>
               <p class="text-gray-300 font-light">plastica@tiagoamoedo.com</p>
             </div>
+
+            <!-- Redes Sociais adicionadas para visibilidade em todos os dispositivos -->
+            <div class="flex items-center gap-6 pt-2">
+              <a
+                href="https://www.instagram.com/dr.tiagoamoedo/"
+                target="_blank"
+                aria-label="Instagram"
+                class="text-gray-300 hover:text-primary transition text-2xl"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="text-gray-300 hover:text-primary transition text-2xl"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="h-[400px]">
+
+        <!-- Mapa com responsividade aprimorada -->
+        <div class="h-[400px] lg:h-auto min-h-[400px]">
           <iframe
             src="https://maps.google.com/maps?q=Av.+Paulo+VI,+389+-+Pituba,+Salvador+-+BA&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
@@ -504,6 +534,7 @@
           ></iframe>
         </div>
       </div>
+
       <div class="bg-black py-4 text-center text-xs text-gray-500 font-light">
         &copy; 2026 Dr. Tiago Amoedo. Todos os direitos reservados. |
         Desenvolvido por
